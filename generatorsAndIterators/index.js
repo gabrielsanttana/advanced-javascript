@@ -34,7 +34,7 @@ function* generator3() {
 const iterator3 = generator3();
 
 console.log(iterator3.next()); // {value: 'Hey', done: false}
-console.log(iterator3.next()); // {value: 'Hey', done: false}
+console.log(iterator3.next()); // {value: 'Hello', done: false}
 console.log(iterator3.next()); // {value: undefined, done: true}
 
 //Fibonacci generator
