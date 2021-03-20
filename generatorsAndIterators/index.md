@@ -2,14 +2,14 @@
 
 A generator function is a special type of iterator
 that can pause its own execution while it maintains its context.
-It uses the keywork yield to return a value and pause.
+It uses the keywork ``yield`` to return a value and pause.
 
-An iterator is the object returned by generator that has three methods:
+An iterator is the object returned by a generator that has three methods:
 - next():
   Yields the next value from the iteration
 
 - return()
-  Returns the value from the return statement. If none, return {value: undefined, done: false}
+  Returns the value from the return statement and breaks the iteration. If none, return {value: undefined, done: false}
 
 - throw()
   Throws an exeception
@@ -27,5 +27,5 @@ function* generator() {
 
 const iterator = generator();
 
-console.log(iterator.next());
+console.log(iterator.next()); //Hey
 ```
