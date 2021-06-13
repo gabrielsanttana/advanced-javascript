@@ -2,9 +2,9 @@
 
 A generator function is a special type of iterator
 that can pause its own execution while it maintains its context.
-It uses the keywork ``yield`` to return a value and pause.
+It uses the keyword ``yield`` to return a value and pause.
 
-An iterator is the object returned by a generator that has three methods:
+An iterator is an object returned by a generator that has three methods:
 - next():
   Yields the next value from the iteration
 
